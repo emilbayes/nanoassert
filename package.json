@@ -1,6 +1,6 @@
 {
   "name": "nanoassert",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Nanoscale assertion module",
   "main": "index.js",
   "dependencies": {},
