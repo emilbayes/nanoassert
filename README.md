@@ -16,8 +16,9 @@ assert(a !== b, `${a} !== ${b}`)
 ### `assert.ok(declaration, [message])`
 
 Assert that `declaration` is truthy otherwise throw `Error` with
-optional `message`. If you want friendlier messages you can use template
-strings to show the assertion made like in the example above.
+optional `message`, which defaults to `AssertionError`.
+If you want friendlier messages you can use template strings to show the
+assertion made like in the example above.
 
 ### `assert.notOk(declaration, [message])`
 
