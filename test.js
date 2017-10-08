@@ -1,6 +1,13 @@
 var assert = require('.')
 var test = require('tape')
 
+var methods = {
+  'notEqual': [true, false],
+  'notOk': [false],
+  'equal': [true, true],
+  'ok': [true]
+}
+
 test('test', function (t) {
   try {
     assert(true === true) // test that it doesn't throw
@@ -22,6 +29,16 @@ test('test', function (t) {
   } catch (e) {
     t.equal(e.message, 'hello world', 'custom message')
   }
+
+  Object.keys(methods).forEach(function (method) {
+    var args = methods[method]
+    try {
+      assert[method].apply(null, args)
+      t.pass('does not throw')
+    } catch (e) {
+      t.fail()
+    }
+  })
 
   t.end()
 })
