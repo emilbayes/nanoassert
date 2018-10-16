@@ -3,6 +3,7 @@
   "version": "1.1.0",
   "description": "Nanoscale assertion module",
   "main": "index.js",
+  "module": "index.es.js",
   "dependencies": {},
   "devDependencies": {
     "tape": "^4.6.3"

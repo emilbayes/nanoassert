@@ -6,6 +6,8 @@
 
 ```js
 var assert = require('nanoassert')
+// or import es module
+// import assert from 'www.unpkg.com/nanoassert?module'
 
 assert(a !== b, `${a} !== ${b}`)
 ```
