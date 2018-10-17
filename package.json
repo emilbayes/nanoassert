@@ -2,13 +2,18 @@
   "name": "nanoassert",
   "version": "1.1.0",
   "description": "Nanoscale assertion module",
-  "main": "index.js",
+  "source": "index.js",
+  "main": "dist/nanoassert.js",
+  "module": "dist/nanoassert.mjs",
   "dependencies": {},
   "devDependencies": {
+    "microbundle": "^0.6.0",
     "tape": "^4.6.3"
   },
   "scripts": {
-    "test": "tape test"
+    "test": "tape test",
+    "build": "microbundle -o dist -f cjs,es",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
