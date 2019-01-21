@@ -1,22 +1,14 @@
-assert.notEqual = notEqual
-assert.notOk = notOk
-assert.equal = equal
-assert.ok = assert
-
 module.exports = assert
 
-function equal (a, b, m) {
-  assert(a == b, m) // eslint-disable-line eqeqeq
-}
+class AssertionError extends Error {
+  constructor (...args) {
+    super(...args)
 
-function notEqual (a, b, m) {
-  assert(a != b, m) // eslint-disable-line eqeqeq
+    if (Error.captureStackTrace) Error.captureStackTrace(this, assert)
+  }
 }
-
-function notOk (t, m) {
-  assert(!t, m)
-}
+AssertionError.prototype.name = 'AssertionError'
 
 function assert (t, m) {
-  if (!t) throw new Error(m || 'AssertionError')
+  if (!t) throw new AssertionError(m)
 }
