@@ -1,5 +1,7 @@
 # `nanoassert`
 
+[![Build Status](https://travis-ci.org/emilbayes/nanoassert.svg?branch=master)](https://travis-ci.org/emilbayes/nanoassert)
+
 > Nanoscale assertion module
 
 ## Usage
