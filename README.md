@@ -7,17 +7,17 @@
 ## Usage
 
 ```js
-var assert = require('nanoassert')
+const assert = require('nanoassert')
 
 assert(a !== b, `${a} !== ${b}`)
 ```
 
 ## API
 
-### `assert(declaration, [message])`
+### `assert(predicate, [message])`
 
-Assert that `declaration` is truthy otherwise throw `AssertionError` with
-optional `message`. In Javascript runtimes that use v8, you will get a nicer
+Assert that `predicate` is truthy, otherwise throw `AssertionError` with
+optional `message`. In Javascript runtimes that support `Error.captureStackTrace`, you will get a nicer
 stack trace with this error.
 If you want friendlier messages you can use template strings to show the
 assertion made like in the example above.

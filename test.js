@@ -1,5 +1,5 @@
-var assert = require('.')
-var test = require('tape')
+const assert = require('.')
+const test = require('tape')
 
 test('test', function (t) {
   try {
