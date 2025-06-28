@@ -10,3 +10,5 @@
  * assert(a !== b, `${a} !== ${b}`)
  */
 declare function assert (predicate: unknown, message?: string): asserts predicate;
+
+export = assert
