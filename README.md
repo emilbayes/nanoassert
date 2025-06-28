@@ -1,6 +1,6 @@
 # `nanoassert`
 
-[![Build Status](https://travis-ci.org/emilbayes/nanoassert.svg?branch=master)](https://travis-ci.org/emilbayes/nanoassert)
+[![example workflow](https://github.com/emilbayes/nanoassert/actions/workflows/npm.yml/badge.svg)](https://github.com/emilbayes/nanoassert/actions/npm.yml)
 
 > Nanoscale assertion module
 
