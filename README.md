@@ -33,6 +33,12 @@ method anyway.
 Docs for the previous version, which is used by many modules on npm, can be
 [found here](https://github.com/emilbayes/nanoassert/tree/v1.1.0)
 
+## `nanoassert@^3.0.0`
+
+Modernise `nanoassert` some, and add the small type definition from `DefinitelyTyped`. Functionally there should be no changes for most users, but the `name` property of the `AssertionError` is no longer set on the prototype, and newer syntax is employed, which might break some downstream modules.
+
+Thank you to the folks that created and maintained the original type definitions.
+
 ## Install
 
 ```sh
