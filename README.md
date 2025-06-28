@@ -1,6 +1,6 @@
 # `nanoassert`
 
-[![example workflow](https://github.com/emilbayes/nanoassert/actions/workflows/npm.yml/badge.svg)](https://github.com/emilbayes/nanoassert/actions/npm.yml)
+[![NPM](https://github.com/emilbayes/nanoassert/actions/workflows/npm.yml/badge.svg)](https://github.com/emilbayes/nanoassert/actions/workflows/npm.yml)
 
 > Nanoscale assertion module
 
