@@ -1,5 +1,6 @@
 class AssertionError extends Error {
   name = 'AssertionError'
+  code = 'ERR_ASSERTION'
 }
 
 /**
