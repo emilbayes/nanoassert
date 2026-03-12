@@ -11,4 +11,11 @@
  */
 declare function assert (predicate: unknown, message?: string): asserts predicate;
 
+declare namespace assert {
+  export class AssertionError extends Error {
+    name: 'AssertionError'
+    code: 'ERR_ASSERTION'
+  }
+}
+
 export = assert
